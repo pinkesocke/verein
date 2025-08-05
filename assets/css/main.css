@@ -1,0 +1,37 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/opensans.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/opensans-italic.ttf);
+    font-style: italic;
+}
+
+:root {
+    
+    --pssf-hell: #F7E8DE;
+    --pssf-rosa: #F6B7B0;
+    --pssf-dunkel: #846564;
+
+    font-family: 'OpenSans';
+
+    }
+
+body {
+    background-color: #846564;
+}
+
+.pssf-hell {
+        color: var(--pssf-hell);
+    }
+
+.pssf-rosa {
+        color: var(--pssf-rosa);
+    }
+
+.pssf-dunkel {
+        color: var(--pssf-dunkel);
+    }

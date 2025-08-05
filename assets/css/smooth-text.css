@@ -5,17 +5,15 @@
 }
 
 .container {
-	height: 100vh;
-	/*background: #fdfdfd;*/
+	height: 25vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 	position: relative;
 	cursor: pointer;
 	flex-direction: column;
 	gap: 3rem;
-	padding-top: 3rem;
+	padding-top: 0rem;
 }
 
 .cursor-hint {
@@ -28,7 +26,7 @@
 }
 
 .text-display {
-	font-size: clamp(7rem, 20vw, 15rem);
+	font-size: 7rem;
 	font-weight: 800;
 	color: #2a2a2a;
 	display: flex;
@@ -65,7 +63,6 @@
 .letter-c,
 .letter-k2,
 .letter-e2 {
-	color: #3b82f6;
 	font-weight: 600;
 }
 
@@ -117,34 +114,15 @@
 	transition-delay: 0.33s;
 }
 
-.credit {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	opacity: 0.4;
-	transition: opacity 0.2s ease;
-}
-
-.credit a {
-	color: #666;
-	text-decoration: none;
-	font-size: 0.8rem;
-	font-weight: 500;
-}
-
-.credit:hover {
-	opacity: 0.8;
-}
-
 .nev {
-	font-size: 5rem;
+	font-size: 3rem;
 	margin-left: 1rem;
 	font-weight: 500;
 }
 
 @media (max-width: 768px) {
 	.text-display {
-		font-size: clamp(5rem, 25vw, 12rem);
+		font-size: 5rem
 	}
 
 	.container {
