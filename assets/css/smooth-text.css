@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	height: 100vh;
+	/*background: #fdfdfd;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	position: relative;
+	cursor: pointer;
+	flex-direction: column;
+	gap: 3rem;
+	padding-top: 3rem;
+}
+
+.cursor-hint {
+	opacity: 0.5;
+	transition: opacity 0.3s ease;
+}
+
+.container:hover .cursor-hint {
+	opacity: 0;
+}
+
+.text-display {
+	font-size: clamp(7rem, 20vw, 15rem);
+	font-weight: 800;
+	color: #2a2a2a;
+	display: flex;
+	align-items: baseline;
+	letter-spacing: -0.03em;
+	line-height: 0.85;
+}
+
+.letter-p,
+.letter-s {
+	position: relative;
+	z-index: 10;
+}
+
+.letter-i,
+.letter-n,
+.letter-k,
+.letter-e,
+.letter-o,
+.letter-c,
+.letter-k2,
+.letter-e2 {
+	max-width: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.letter-i,
+.letter-n,
+.letter-k,
+.letter-e,
+.letter-o,
+.letter-c,
+.letter-k2,
+.letter-e2 {
+	color: #3b82f6;
+	font-weight: 600;
+}
+
+.container:hover .letter-i {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.05s;
+}
+
+.container:hover .letter-n {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.1s;
+}
+
+.container:hover .letter-k {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.13s;
+}
+
+.container:hover .letter-e {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.16s;
+}
+
+.container:hover .letter-o {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.19s;
+}
+
+.container:hover .letter-c {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.22s;
+}
+
+.container:hover .letter-k2 {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.28s;
+}
+
+.container:hover .letter-e2 {
+	max-width: 200px;
+	opacity: 1;
+	transition-delay: 0.33s;
+}
+
+.credit {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0.4;
+	transition: opacity 0.2s ease;
+}
+
+.credit a {
+	color: #666;
+	text-decoration: none;
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.credit:hover {
+	opacity: 0.8;
+}
+
+.nev {
+	font-size: 5rem;
+	margin-left: 1rem;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	.text-display {
+		font-size: clamp(5rem, 25vw, 12rem);
+	}
+
+	.container {
+		gap: 2rem;
+	}
+}
